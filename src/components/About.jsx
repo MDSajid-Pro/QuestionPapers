@@ -17,7 +17,7 @@ const About = () => {
           </p>
           <p className="mb-3">
             2. Our platform covers a wide range of universities and courses,
-            including <b>B.Sc., B.A., B.Com,</b> and more. Simply choose your
+            including <b>B.Sc, B.A, B.Com, BE.d</b> and more. Simply choose your
             university, course, semester, and year, and download the question
             papers with just a few clicks.
           </p>

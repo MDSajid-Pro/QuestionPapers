@@ -73,7 +73,7 @@ const SelectionForm = () => {
         {getPaperLinks().length > 0 ? (
           <div>
             <h2 className="text-lg mb-3 text-center">Available Papers:</h2>
-            <ul className="text-wrap ">
+            <ul className="text-justify ">
               {getPaperLinks().map((paper, index) => (
                 <li key={index} className="mb-2">
                   <span className="mr-2">{index + 1}.</span>

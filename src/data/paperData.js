@@ -101,7 +101,7 @@ const paperData = {
           },
           {
             name: "URDU - Sher-O-Adab (2024)",
-            link: "public/Bsc/BUB/I Sem/B.sc I sem NEP Urdu - Sher-O-Adab 2024.pdf",
+            link: "/Bsc/BUB/I Sem/B.sc I sem NEP Urdu - Sher-O-Adab 2024.pdf",
           },
           {
             name: "Botany - Microbial Diversity and Technology (2024)",
@@ -128,6 +128,10 @@ const paperData = {
             link: "/Bsc/BUB/I Sem/B.Sc I sem NEP OE Botany - Plants and Human Welfare 2024.pdf",
           },
           {
+            name: "Environmental Studies (2024)",
+            link: "/Bsc/BUB/I Sem/B.sc I sem NEP Environmental Studies 2024.pdf",
+          },
+          {
             name: "Computer Science - Computer Fundamentals and Programming in C (2024)",
             link: "/Bsc/BUB/I Sem/B.Sc I sem NEP Computer Science - Computer Fundamentals and Programming in C 2024.pdf",
           },
@@ -138,10 +142,72 @@ const paperData = {
       Semester2: {
         2024: [
           {
-            name: "ENGLISH - Basic English (2024)",
-            link: "/Bsc/BUB/I Sem/B.sc I sem NEP Basic English 2024.pdf",
+            name: " (2024)",
+            link: "",
           },
         ],
+      },
+      Semester1: {
+        2024: [
+          {
+            name: "English - Basic English (2024)",
+            link: "/BA/BUB/I sem/B.A I sem NEP Basic English 2024.pdf",
+          },
+          {
+            name: "Urdu - Nazam-o-Nasar (2024)",
+            link: "/BA/BUB/I sem/B.A I sem NEP Urdu - Nazam-o-Nasar 2024.pdf",
+          },
+          {
+            name: "OE Urdu - Introduction of Urdu Language (2024)",
+            link: "/BA/BUB/I sem/B.A I sem NEP OE Urdu - Introduction of Urdu Language 2024.pdf",
+          },
+          {
+            name: "Hindi Basic (2024)",
+            link: "/BA/BUB/I sem/B.A I sem NEP Hindi Basic 2024.pdf",
+          },
+          {
+            name: " Hindi (Open Elective) (2024)",
+            link: "/BA/BUB/I sem/B.A I sem NEP Hindi (Open Elective) 2024.pdf",
+          },
+          {
+            name: "History - Cultural Heritage of India (2024)",
+            link: "/BA/BUB/I sem/B.A I sem NEP History - Cultural Heritage of India 2024.pdf",
+          },
+          {
+            name: "History - Political History of Karnataka (2024)",
+            link: "/BA/BUB/I sem/B.A I sem NEP History - Political History of Karnataka 2024.pdf",
+          },
+          {
+            name: "Political Science - Basic Concept in Political Science (2024)",
+            link: "/BA/BUB/I sem/B.A I sem NEP Political Science - Basic Concept in Political Science 2024.pdf",
+          },
+          {
+            name: "Political Science - Political Theory (2024)",
+            link: "/BA/BUB/I sem/B.A I sem NEP Political Science - Political Theory 2024.pdf",
+          },
+          {
+            name: "Computer science - Digital Fluency (2024)",
+            link: "/BA/BUB/I sem/B.A I sem NEP Computer science - Digital Fluency 2024.pdf",
+          },
+        ],
+      },
+    },
+    BCom: {
+      Semester2: {
+        2024: [
+          {
+            name: "Advanced Financial Accounting (2024)",
+            link: "/Bcom/BUB/II sem/B.Com II sem NEP COMMERCE - Advanced Financial Accounting 2024.pdf",
+          },
+          {
+            name: "Corporate Administration (2024)",
+            link: "/Bcom/BUB/II sem/B.Com II sem NEP COMMERCE - Corporate Administration 2024 .pdf",
+          },
+          {
+            name: "Law & Practice Of Banking",
+            link: "/Bcom/BUB/II sem/B.Com II sem NEP COMMERCE - Law & Practice Of Banking 2024.pdf",
+          },
+        ]
       },
     },
     BEd: {
@@ -153,11 +219,15 @@ const paperData = {
           },
           {
             name: "Education Technology (2024)",
-            link:"/BEd/I sem/B.Ed I sem Education Technology 2024.pdf",
+            link: "/BEd/I sem/B.Ed I sem Education Technology 2024.pdf",
           },
           {
             name: "Philosophical and Sociological Bases of Education (2024)",
             link: "/BEd/I sem/B.Ed I sem Philosophical and Sociological Bases of Education 2024.pdf",
+          },
+          {
+            name: "Understanding Discipline and Pedagogy of Biological Science (2024)",
+            link: "/BEd/I sem/B.Ed I sem Understanding Discipline and Pedagogy of Biological Science.pdf",
           },
         ],
       },
