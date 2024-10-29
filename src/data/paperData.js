@@ -20,6 +20,10 @@ const paperData = {
             link: "/Bsc/GUG/B.Sc 3rd Sem NEP Zoology - Molecular biology Bio instrumentation and techniques in biology 2024.pdf",
           },
           {
+            name: "Physics - Wave Motion and Optics (2024)",
+            link: "/Bsc/GUG/Bsc. III Sem Physics - Wave Motion and Optics 2023.pdf",
+          },
+          {
             name: "Political Science - India and Indian constitution (2024)",
             link: "/Bsc/GUG/B.Sc III Sem (NEP) Political Science - India and Indian constitution 2024.pdf",
           },
@@ -140,7 +144,7 @@ const paperData = {
     },
     BA: {
       Semester2: {
-        2024: [
+        2022: [
           {
             name: " (2024)",
             link: "",
