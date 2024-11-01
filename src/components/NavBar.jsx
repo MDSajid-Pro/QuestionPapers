@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { HashLink } from "react-router-hash-link";
-import assets from "../assets/SS Logo.png"
+import assets from "../assets/SS_Logo.png"
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
