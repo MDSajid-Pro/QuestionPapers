@@ -144,10 +144,34 @@ const paperData = {
     },
     BA: {
       Semester2: {
-        2022: [
+        2024: [
           {
-            name: " (2024)",
-            link: "",
+            name: "English - Literary Vista (2024)",
+            link: "/BA/BUB/II sem/B.A II sem English - Literary Vista 2024.pdf",
+          },
+          {
+            name: "Basic Urdu - Nazam-o-Nasar-II (2024)",
+            link: "/BA/BUB/II sem/B.A II sem Basic Urdu - Nazam-o-Nasar-II 2024.pdf",
+          },
+          {
+            name: "English OE - Functional English Grammar and Study Skills (2024)",
+            link: "/BA/BUB/II sem/B.A II sem English OE - Functional English Grammar and Study Skills 2024.pdf",
+          },
+          {
+            name: "History - Cultural Heritage of Karnataka (2024)",
+            link: "/BA/BUB/II sem/B.A II sem History - Cultural Heritage of Karnataka 2024.pdf",
+          },
+          {
+            name: "History - Political History of Karnataka (From 1100 CE to 1750CE) (2024)",
+            link: "/BA/BUB/II sem/B.A II sem History - Political History of Karnataka (From 1100 CE to 1750CE) 2024.pdf",
+          },
+          {
+            name: "Political Science - Indian National Movement and Constitutional Development (2024)",
+            link: "/BA/BUB/II sem/B.A II sem Political Science - Indian National Movement and Constitutional Development 2024.pdf",
+          },
+          {
+            name: "Environmental Studies (2024)",
+            link: "/BA/BUB/II sem/B.A II sem Environmental Studies 2024.pdf",
           },
         ],
       },

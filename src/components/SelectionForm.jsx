@@ -64,7 +64,6 @@ const SelectionForm = () => {
           value={year}
         >
           <option value="">Select Year</option>
-          <option value="2023">2023</option>
           <option value="2024">2024</option>
         </select>
       </div>
@@ -80,7 +79,7 @@ const SelectionForm = () => {
                   <a
                     href={paper.link}
                     download={paper.name}
-                    className="text-blue-500 hover:text-green-500"
+                    className="text-blue-600 hover:text-green-500"
                   >
                     {paper.name}
                   </a>
