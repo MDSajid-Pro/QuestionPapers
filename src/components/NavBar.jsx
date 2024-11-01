@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { HashLink } from "react-router-hash-link";
-import assets from "../assets/SS_Logo.png"
+
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,8 +12,7 @@ const NavBar = () => {
   return (
     <nav className="bg-green-500 sticky top-0 z-50 p-2">
       <div className="container mx-auto flex justify-between items-center">
-        <img src={assets} alt="logo" className="w-32 h-14 ml-5 md:ml-20 cursor-pointer"/>
-        
+      <a href="/" className="text-white pl-8 text-xl font-bold">MD SAJID</a>
         <div className="block lg:hidden">
           {/* Mobile menu button */}
           <button
