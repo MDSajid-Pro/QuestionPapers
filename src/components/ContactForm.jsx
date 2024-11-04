@@ -1,23 +1,35 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
+import Swal from "sweetalert2";
+import emailjs from "@emailjs/browser";
 
-const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    company: "",
-    phone: "",
-    message: "",
-  });
+const serviceKey = import.meta.env.VITE_APP_SERVICE_KEY;
+const templateKey = import.meta.env.VITE_APP_TEMPLATE_KEY;
+const apiKey = import.meta.env.VITE_APP_API_KEY;
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
+export const ContactForm = () => {
+  const form = useRef();
 
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    // You can handle form submission logic here
-    console.log(formData);
+
+    emailjs.sendForm(serviceKey, templateKey, form.current, apiKey).then(
+      () => {
+        Swal.fire({
+          title: "Success!",
+          text: "Message sent successfully!",
+          icon: "success",
+        });
+      },
+      (error) => {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Message not send! Try again",
+        });
+        console.log("FAILED...", error.text);
+      }
+    );
+    e.target.reset();
   };
 
   return (
@@ -34,15 +46,15 @@ const ContactForm = () => {
         {/* Right side form */}
         <div className="w-1/2 p-10">
           <h2 className="text-2xl font-bold mb-4">Contact</h2>
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form ref={form} onSubmit={sendEmail} className="space-y-4">
             <div>
-              <label className="block mb-1 text-sm text-red-700">* Required</label>
+              <label className="block mb-1 text-sm text-red-700">
+                * Required
+              </label>
               <input
                 type="text"
-                name="name"
+                name="user_name"
                 placeholder="Name *"
-                value={formData.name}
-                onChange={handleChange}
                 className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
                 required
               />
@@ -50,22 +62,18 @@ const ContactForm = () => {
             <div>
               <input
                 type="email"
-                name="email"
+                name="user_email"
                 placeholder="Email *"
-                value={formData.email}
-                onChange={handleChange}
                 className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
                 required
               />
             </div>
-            
+
             <div>
               <input
                 type="tel"
                 name="phone"
                 placeholder="Phone *"
-                value={formData.phone}
-                onChange={handleChange}
                 className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
                 required
               />
@@ -73,9 +81,7 @@ const ContactForm = () => {
             <div>
               <textarea
                 name="message"
-                placeholder="Message"
-                value={formData.message}
-                onChange={handleChange}
+                placeholder="Message *"
                 className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
                 rows="4"
               ></textarea>

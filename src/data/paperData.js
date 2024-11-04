@@ -235,7 +235,7 @@ const paperData = {
             name: "Law & Practice Of Banking",
             link: "/Bcom/BUB/II sem/B.Com II sem NEP COMMERCE - Law & Practice Of Banking 2024.pdf",
           },
-        ]
+        ],
       },
     },
     BEd: {

@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div className="App font-sans">
       <div id="home" className="sticky top-0 z-50">
-      <NavBar />
+        <NavBar />
       </div>
       <div className="container mx-auto p-5 font-sans">
         <SelectionForm />
@@ -21,10 +21,10 @@ const App = () => {
           <Testimonials />
         </div>
       </div>
-      <ContactForm/>
+      <ContactForm />
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

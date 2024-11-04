@@ -18,16 +18,15 @@ const SelectionForm = () => {
   return (
     <div className="flex flex-col items-center p-8">
       <h1 className="text-3xl font-bold mb-8">Download Question Papers</h1>
-      
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full max-w-4xl">
-        
         {/* University selection */}
         <select
           onChange={(e) => setUniversity(e.target.value)}
           className="border p-2 rounded mb-4 w-full"
           value={university}
         >
-          <option value="">Select University</option>
+          <option>Select University</option>
           <option value="gulbargaUniversity"> Gulbarga University</option>
           <option value="bidarUniversity"> Bidar University</option>
         </select>
@@ -38,7 +37,7 @@ const SelectionForm = () => {
           className="border p-2 rounded mb-4 w-full"
           value={course}
         >
-          <option value="">Select Course</option>
+          <option>Select Course</option>
           <option value="BSc">B.Sc</option>
           <option value="BA">B.A</option>
           <option value="BCom">B.Com</option>
@@ -51,7 +50,7 @@ const SelectionForm = () => {
           className="border p-2 rounded mb-4 w-full"
           value={semester}
         >
-          <option value="">Select Semester</option>
+          <option>Select Semester</option>
           <option value="Semester1">I Semester</option>
           <option value="Semester2">II Semester</option>
           <option value="Semester3">III Semester</option>
@@ -88,7 +87,9 @@ const SelectionForm = () => {
             </ul>
           </div>
         ) : (
-          <p className="text-red-500">No papers available for the selected options.</p>
+          <p className="text-red-500">
+            No papers available for the selected options.
+          </p>
         )}
       </div>
     </div>
