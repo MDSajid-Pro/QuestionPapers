@@ -5,49 +5,59 @@ const paperData = {
         2024: [
           {
             name: "English - Literary Lamps (2024)",
-            link: "/Bsc/GUG/B.Sc 3rd sem NEP Basic English 2024.pdf",
+            link: "/Bsc/GUG/III sem/B.Sc 3rd sem NEP Basic English 2024.pdf",
           },
           {
             name: "Urdu - Sher-O-Adab (2024)",
-            link: "/Bsc/GUG/BSc 3rd Sem NEP Urdu - Sher-O-Adab 2024.pdf",
+            link: "/Bsc/GUG/III sem/BSc 3rd Sem NEP Urdu - Sher-O-Adab 2024.pdf",
           },
           {
             name: "Botany - Plant Anatomy & Development Biology (2024)",
-            link: "/Bsc/GUG/B.Sc 3rd Sem NEP Botany - Plant Anatomy & Development Biology 2024.pdf",
+            link: "/Bsc/GUG/III sem/B.Sc 3rd Sem NEP Botany - Plant Anatomy & Development Biology 2024.pdf",
           },
           {
             name: "Zoology - Molecular Biology Bioinstrumentation & Techniques In Biology (2024)",
-            link: "/Bsc/GUG/B.Sc 3rd Sem NEP Zoology - Molecular biology Bio instrumentation and techniques in biology 2024.pdf",
+            link: "/Bsc/GUG/III sem/B.Sc 3rd Sem NEP Zoology - Molecular biology Bio instrumentation and techniques in biology 2024.pdf",
           },
           {
             name: "Physics - Wave Motion and Optics (2024)",
-            link: "/Bsc/GUG/Bsc. III Sem Physics - Wave Motion and Optics 2023.pdf",
+            link: "/Bsc/GUG/III sem/Bsc. III Sem Physics - Wave Motion and Optics 2023.pdf",
           },
           {
             name: "Political Science - India and Indian constitution (2024)",
-            link: "/Bsc/GUG/B.Sc III Sem (NEP) Political Science - India and Indian constitution 2024.pdf",
+            link: "/Bsc/GUG/III sem/B.Sc III Sem (NEP) Political Science - India and Indian constitution 2024.pdf",
           },
           {
             name: "Management - Financial education and Investment Awareness (2024)",
-            link: "/Bsc/GUG/B.Sc 3rd Sem NEP Management - Financial education and Investment Awareness 2024.pdf",
-          },
-        ],
-        2022: [
-          {
-            name: "",
-            link: "",
-          },
-          {
-            name: "",
-            link: "",
+            link: "/Bsc/GUG/III sem/B.Sc 3rd Sem NEP Management - Financial education and Investment Awareness 2024.pdf",
           },
         ],
       },
-      Semester2: {
-        2022: [
+      Semester4: {
+        2024: [
           {
-            name: "",
-            link: "",
+            name: "English - Basic English (2024)",
+            link: "/Bsc/GUG/IV sem/B.Sc IV Sem Basic English.pdf",
+          },
+          {
+            name: "Urdu - Sher-O-Adab VI (2024)",
+            link: "/Bsc/GUG/IV sem/B.Sc IV Sem Urdu - Sher-O-Adab VI 2024.pdf",
+          },
+          {
+            name: "Botany - Ecology & Conservation Biology (2024)",
+            link: "/Bsc/GUG/IV sem/B.Sc IV Sem Botany - Ecology & Conservation Biology 2024.pdf",
+          },
+          {
+            name: "Zoology - Gene Technology, Immunology & Computational Biology (2024)",
+            link: "/Bsc/GUG/IV sem/B.Sc IV Sem Zoology - Gene Technology, Immunology & Computational Biology 2024.pdf",
+          },
+          {
+            name: "Zoology OE - Animal Behaviour (2024)",
+            link: "/Bsc/GUG/IV sem/B.Sc IV Sem Zoology OE - Animal Behaviour 2024.pdf",
+          },
+          {
+            name: "Computer Science - Artificial Intelligence (2024)",
+            link: "/Bsc/GUG/IV sem/B.Sc IV Sem Computer Science - Artificial Intelligence 2024.pdf",
           },
         ],
       },
@@ -56,7 +66,34 @@ const paperData = {
       // Similarly, add data for BA course
     },
     BCom: {
-      // Similarly, add data for BCom course
+      Semester6: {
+        2024: [
+          {
+            name: "Advance Financial Management (2024)",
+            link: "/Bcom/GUG/VI sem/B.Com 6th sem NEP COMMERCE - Advance Financial Management 2024.pdf",
+          },
+          {
+            name: "Assessment of Persons other than Individual and Filing of ITRs (2024)",
+            link: "/Bcom/GUG/VI sem/B.Com 6th sem NEP COMMERCE - Assessment of Persons other than Individual and Filing of ITRs 2024.pdf",
+          },
+          {
+            name: "Cultural Diversity at Work Place (2024)",
+            link: "/Bcom/GUG/VI sem/B.Com 6th sem NEP COMMERCE - Cultural Diversity at Work Place 2024.pdf",
+          },
+          {
+            name: "Customer Relationship Management (2024)",
+            link: "/Bcom/GUG/VI sem/B.Com 6th sem NEP COMMERCE - Customer Relationship Management 2024.pdf",
+          },
+          {
+            name: "Income Tax Law and Practice -2 (2024)",
+            link: "/Bcom/GUG/VI sem/B.Com 6th sem NEP COMMERCE - Income Tax Law and Practice -2 2024.pdf",
+          },
+          {
+            name: "Management Accounting (2024)",
+            link: "/Bcom/GUG/VI sem/B.Com 6th sem NEP COMMERCE - Management Accounting 2024.pdf",
+          },
+        ],
+      },
     },
   },
   bidarUniversity: {
@@ -257,10 +294,17 @@ const paperData = {
             name: "Understanding Discipline and Pedagogy of Biological Science (2024)",
             link: "/BEd/I sem/B.Ed I sem Understanding Discipline and Pedagogy of Biological Science.pdf",
           },
+          {
+            name: "Understanding Discipline and Pedagogy of Mathematics (2024)",
+            link: "public/BEd/I sem/B..Ed I Sem Understanding Discipline & Pedagogy Of Mathematics 2024.pdf",
+          },
+          {
+            name: "Understanding Discipline and Pedagogy of Physical Science (2024)",
+            link: "/BEd/I sem/B.Ed I Sem Understanding Discipline & Pedagogy Physical Science 2024.pdf",
+          },
         ],
       },
     },
   },
 };
-
 export default paperData;

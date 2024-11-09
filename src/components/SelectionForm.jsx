@@ -54,6 +54,8 @@ const SelectionForm = () => {
           <option value="Semester1">I Semester</option>
           <option value="Semester2">II Semester</option>
           <option value="Semester3">III Semester</option>
+          <option value="Semester4">IV Semester</option>
+          <option value="Semester6">VI Semester</option>
         </select>
 
         {/* Year selection */}
