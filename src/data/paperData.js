@@ -63,7 +63,38 @@ const paperData = {
       },
     },
     BA: {
-      // Similarly, add data for BA course
+      Semester4: {
+        2024: [
+          {
+            name: "English - Basic English (2024)",
+            link: "/BA/GUG/IV sem/B.A IV Sem English 2024.pdf",
+          }, 
+          {
+            name: "Urdu - Nazm-O-Nasar IV (2024)",
+            link: "/BA/GUG/IV sem/B.A IV Sem Urdu - Nazm-O-Nasar IV 2024.pdf",
+          },
+          {
+            name: "History - Cultural History of India (2024)",
+            link: "/BA/GUG/IV sem/B.A IV Sem History - Cultural History of India 2024.pdf",
+          },
+          {
+            name: "History - History of Mediaeval India (2024)",
+            link: "/BA/GUG/IV sem/B.A IV Sem History - History of Mediaeval India 2024.pdf",
+          },
+          {
+            name: "Political Science - Ancient Indian Political Ideas & Instruction (2024)",
+            link: "/BA/GUG/IV sem/B.A IV Political Science - Ancient Indian Political Ideas & Instruction 2024.pdf",
+          },
+          {
+            name: "India and Indian Constitution (2024)",
+            link: "/BA/GUG/IV sem/B.A IV sem India and Indian Constitution 2024.pdf",
+          },
+          {
+            name: "Financial Education and Investment Awareness (2024)",
+            link: "/BA/GUG/IV sem/B.A IV Sem Financial Education and Investment Awareness 2024.pdf",
+          },
+        ]
+      }
     },
     BCom: {
       Semester6: {

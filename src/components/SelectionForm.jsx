@@ -23,21 +23,21 @@ const SelectionForm = () => {
         {/* University selection */}
         <select
           onChange={(e) => setUniversity(e.target.value)}
-          className="border p-2 rounded mb-4 w-full"
+          className="border p-2 rounded-xl mb-4 w-full"
           value={university}
         >
-          <option>Select University</option>
-          <option value="gulbargaUniversity"> Gulbarga University</option>
+          <option>---Select University---</option>
+          <option value="gulbargaUniversity">Gulbarga University</option>
           <option value="bidarUniversity"> Bidar University</option>
         </select>
 
         {/* Course selection */}
         <select
           onChange={(e) => setCourse(e.target.value)}
-          className="border p-2 rounded mb-4 w-full"
+          className="border p-2 rounded-xl mb-4 w-full"
           value={course}
         >
-          <option>Select Course</option>
+          <option>---Select Course------</option>
           <option value="BSc">B.Sc</option>
           <option value="BA">B.A</option>
           <option value="BCom">B.Com</option>
@@ -47,10 +47,10 @@ const SelectionForm = () => {
         {/* Semester selection */}
         <select
           onChange={(e) => setSemester(e.target.value)}
-          className="border p-2 rounded mb-4 w-full"
+          className="border p-2 rounded-xl mb-4 w-full"
           value={semester}
         >
-          <option>Select Semester</option>
+          <option>---Select Semester---</option>
           <option value="Semester1">I Semester</option>
           <option value="Semester2">II Semester</option>
           <option value="Semester3">III Semester</option>
@@ -61,10 +61,10 @@ const SelectionForm = () => {
         {/* Year selection */}
         <select
           onChange={(e) => setYear(e.target.value)}
-          className="border p-2 rounded mb-4 w-full"
+          className="border p-2 rounded-xl mb-4 w-full"
           value={year}
         >
-          <option value="">Select Year</option>
+          <option value="">---Select Year---</option>
           <option value="2024">2024</option>
         </select>
       </div>
@@ -80,7 +80,7 @@ const SelectionForm = () => {
                   <a
                     href={paper.link}
                     download={paper.name}
-                    className="text-blue-600 hover:text-green-500"
+                    className="text-blue-600 hover:text-[#A3248F]"
                   >
                     {paper.name}
                   </a>

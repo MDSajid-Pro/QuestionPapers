@@ -3,32 +3,39 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className=" py-12">
+    <section className="py-12 bg-gray-100 rounded-2xl">
       <div className="container mx-auto px-4">
-        <h3 className="text-3xl font-bold text-center pt-7 text-gray-700 mb-8">
-          About Us
-        </h3>
-        <div className="text-clip  mx-6">
-          <p className="mb-3">
-            1. Welcome to our paper download platform! We are dedicated
-            to providing students with an easy and efficient way to access
-            previous year's question papers. Whether you are preparing for your
-            exams or want to review past papers, we've got you covered.
+        <header className="text-center mb-10">
+          <h3 className="text-3xl font-bold text-gray-800 mb-4">
+            About Us
+          </h3>
+          <p className="text-gray-600">
+            Empowering students with easy access to academic resources.
           </p>
-          <p className="mb-3">
-            2. Our platform covers a wide range of universities and courses,
-            including <b>B.Sc, B.A, B.Com, BE.d</b> and more. Simply choose your
-            university, course, semester, and year, and download the question
-            papers with just a few clicks.
+        </header>
+        <article className="max-w-3xl mx-auto text-gray-700 leading-relaxed">
+          <p className="mb-5">
+            <span className="font-semibold">1. Welcome!</span> Our platform is
+            dedicated to providing students with an easy and efficient way to
+            access previous year's question papers. Whether you are preparing
+            for exams or reviewing past papers, we've got you covered.
           </p>
-          <p className="mb-3">
-            3. We aim to make your academic journey smoother and help you succeed
-            in your studies by providing valuable resources at your fingertips.
+          <p className="mb-5">
+            <span className="font-semibold">2. Wide Coverage:</span> We cater to
+            a variety of universities and courses, including <b>B.Sc, B.A,
+            B.Com, BE.d</b>, and more. Simply select your university, course,
+            semester, and year to download question papers effortlessly.
           </p>
-        </div>
+          <p>
+            <span className="font-semibold">3. Our Mission:</span> To support
+            your academic success by providing valuable resources at your
+            fingertips, making your educational journey smoother.
+          </p>
+        </article>
       </div>
-    </div>
+    </section>
   );
 };
 
 export default About;
+

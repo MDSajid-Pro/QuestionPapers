@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { assets } from "../assets/assets";
+import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const NavBar = () => {
@@ -9,9 +11,9 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="bg-green-500 sticky top-0 z-50 p-2">
+    <nav className="bg-[#736DA8] sticky top-0 z-50 p-2">
       <div className="container mx-auto flex justify-between items-center">
-        <a href="/" className="text-white pl-8 text-xl font-bold">
+        <a href="#" className="text-white pl-8 text-xl font-bold">
           MD SAJID
         </a>
         <div className="block lg:hidden">
@@ -22,53 +24,32 @@ const NavBar = () => {
           >
             {isOpen ? (
               // Close (X) Icon
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
+              <img src={assets.cross_icon} className='md:hidden w-7' alt="cross_icon" />
             ) : (
-              // Hamburger Icon
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
+                // Hamburger Icon
+                <img src={assets.menu_icon} className='md:hidden w-7' alt="menu_icon" />
             )}
           </button>
         </div>
         {/* Menu Links */}
-        <ul className="hidden lg:flex space-x-6 pr-11 text-white">
+        <ul className="hidden lg:flex space-x-6 pr-11 text-[#F0F0F0]">
           <li>
-            <HashLink smooth to="/#home" className="hover:text-sky-700">
+            <HashLink smooth to="/#home" className="hover:text-white">
               HOME
             </HashLink>
           </li>
           <li>
-            <HashLink smooth to="/#about" className="hover:text-sky-700">
+            <HashLink smooth to="/#about" className="hover:text-white">
               ABOUT
             </HashLink>
           </li>
           <li>
-            <HashLink smooth to="/#testimonial" className="hover:text-sky-700">
+            <Link to="/quiz" className="hover:text-white">
+              QUIZ
+            </Link>
+          </li>
+          <li>
+            <HashLink smooth to="/#testimonial" className="hover:text-white">
               TESTIMONIAL
             </HashLink>
           </li>
@@ -76,8 +57,8 @@ const NavBar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`lg:hidden ${isOpen ? "block" : "hidden"}`}>
-        <ul className="flex flex-col items-center pl-1 space-y-4 text-lg text-white">
+      <div className={`md:hidden fixed w-full right-0 top-0 bottom-0 overflow-hidden bg-white transition-all ${isOpen ? 'block' : 'hidden'}`}>
+        <ul className="flex flex-col items-center gap-2 mt-5 px-5 text-lg font-medium">
           <li>
             <HashLink
               smooth
@@ -97,6 +78,15 @@ const NavBar = () => {
             >
               ABOUT
             </HashLink>
+          </li>
+          <li>
+            <Link
+              to="/quiz"
+              className="hover:text-sky-700"
+              onClick={() => setIsOpen(false)}
+            >
+              QUIZ
+            </Link>
           </li>
           <li>
             <HashLink

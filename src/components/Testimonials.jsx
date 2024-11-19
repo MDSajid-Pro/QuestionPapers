@@ -29,6 +29,12 @@ const Testimonials = () => {
             </p>
             <h4 className="mt-4 font-bold">— Kaif Ali, B.Com. Student</h4>
           </div>
+          <div className="bg-gray-50 p-6 rounded-lg shadow-md">
+            <p className="italic text-gray-600">
+              "This website has been a lifesaver during exam season. I could find question papers for my university exams.Excellent platform for serious learners!"
+            </p>
+            <h4 className="mt-4 font-bold">— Neha Khanam, B.Ed. Student</h4>
+          </div>
         </div>
       </div>
     </div>
