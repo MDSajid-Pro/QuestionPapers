@@ -127,6 +127,70 @@ const topics = {
       },
     ],
   },
+  "Environmental Studies": {
+    questions: [
+      {
+        question: "Natural selection was proposed by ?",
+        options: ["Charles Darwin", "Aristotle", "odum","Watson and Crick"],
+        answer: "Charles Darwin",
+        marks: 2,
+      },
+      {
+        question: "Forest is what type of resource ?",
+        options: ["Non renewable", "Renewable", "Both a and b","None of the above"],
+        answer: "Renewable",
+        marks: 2,
+      },
+      {
+        question: "By which of the following process plant are able to convert solar energy into chemical energy ?",
+        options: ["Respiration", "Photosynthesis", "Transpiration","Excretion"],
+        answer: "Photosynthesis",
+        marks: 2,
+      },
+      {
+        question: "Which of the following is the world largest desert ?",
+        options: ["African Sahara desert", "Thar desert", "Arabian desert","Gobi desert"],
+        answer: "African Sahara desert",
+        marks: 2,
+      },
+      {
+        question: "Expansion of CFC is ?",
+        options: ["Carbon floride corporation", "Carbon functioning company", "Chlorofluorocarbon","None of the above"],
+        answer: "Chlorofluorocarbon",
+        marks: 2,
+      },
+      {
+        question: "Which of the following unit is used to measure the sound ?",
+        options: ["Watt", "Ohms", "Volts","Decibel"],
+        answer: "Decibel",
+        marks: 2,
+      },
+      {
+        question: "What is the percentage of carbon dioxide in the atmosphere ?",
+        options: ["0.93%", "20.95%", "0.03%","0.2%"],
+        answer: "0.03%",
+        marks: 2,
+      },
+      {
+        question: "Which of the following is an example for natural pollution ?",
+        options: ["Volcanoes, cyclones and forest fire", "Chemicals released by the industries", "Pollution caused by insecticides","None of the above"],
+        answer: "Volcanoes, cyclones and forest fire",
+        marks: 2,
+      },
+      {
+        question: "National human rights commission head office is located at ?",
+        options: ["Chennai", "Hyderabad", "Mumbai","Delhi"],
+        answer: "Delhi",
+        marks: 2,
+      },
+      {
+        question: "Which of the following is an objective of family planning ?",
+        options: ["To reduce birth rate", "To care for health of the child", "To reduce death rate","All of the above"],
+        answer: "All of the above",
+        marks: 2,
+      },
+    ]
+  }
 };
 
 export default topics;

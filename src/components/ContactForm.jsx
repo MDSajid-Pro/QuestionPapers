@@ -12,6 +12,17 @@ export const ContactForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    // Check if the form is valid
+    if (!form.current.checkValidity()) {
+      Swal.fire({
+        icon: "error",
+        title: "Validation Error",
+        text: "Please fill out all required fields correctly before submitting.",
+      });
+      return;
+    }
+
+    // Send email
     emailjs.sendForm(serviceKey, templateKey, form.current, apiKey).then(
       () => {
         Swal.fire({
@@ -19,17 +30,17 @@ export const ContactForm = () => {
           text: "Message sent successfully!",
           icon: "success",
         });
+        e.target.reset(); // Reset the form after successful submission
       },
       (error) => {
         Swal.fire({
           icon: "error",
           title: "Oops...",
-          text: "Message not send! Try again",
+          text: "Message not sent! Please try again.",
         });
-        console.log("FAILED...", error.text);
+        console.error("FAILED...", error.text);
       }
     );
-    e.target.reset();
   };
 
   return (
@@ -46,11 +57,9 @@ export const ContactForm = () => {
         {/* Right side form */}
         <div className="w-1/2 p-10">
           <h2 className="text-2xl font-bold mb-4">Contact</h2>
-          <form ref={form} onSubmit={sendEmail} className="space-y-4">
+          <form ref={form} onSubmit={sendEmail} className="space-y-4" noValidate>
             <div>
-              <label className="block mb-1 text-sm text-red-700">
-                * Required
-              </label>
+              <label className="block mb-1 text-sm text-red-700">* Required</label>
               <input
                 type="text"
                 name="user_name"
@@ -58,6 +67,7 @@ export const ContactForm = () => {
                 className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
                 required
               />
+              <small className="text-red-500 hidden">Name is required</small>
             </div>
             <div>
               <input
@@ -67,8 +77,8 @@ export const ContactForm = () => {
                 className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
                 required
               />
+              <small className="text-red-500 hidden">Valid email is required</small>
             </div>
-
             <div>
               <input
                 type="tel"
@@ -77,6 +87,7 @@ export const ContactForm = () => {
                 className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
                 required
               />
+              <small className="text-red-500 hidden">Phone number is required</small>
             </div>
             <div>
               <textarea
@@ -84,7 +95,9 @@ export const ContactForm = () => {
                 placeholder="Message *"
                 className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
                 rows="4"
+                required
               ></textarea>
+              <small className="text-red-500 hidden">Message is required</small>
             </div>
             <div>
               <button

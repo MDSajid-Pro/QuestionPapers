@@ -78,7 +78,7 @@ const Quiz = () => {
   return (
     <div className="flex flex-col lg:flex-row h-[95vh]">
       {/* Sidebar */}
-      <div className="w-full lg:w-1/4 bg-purple-700 text-white p-4 ">
+      <div className="w-full lg:w-1/4 bg-[#10439F] text-white p-4 ">
         <h2 className="text-2xl font-bold mb-4">SUBJECTS</h2>
         <select
           onChange={handleTopicChange}
@@ -109,7 +109,7 @@ const Quiz = () => {
       </div>
 
       {/* Main content */}
-      <div className="w-auto lg:w-3/4 p-8 bg-[#F0F0F0]">
+      <div className="w-auto lg:w-3/4 p-8 bg-[#F1EAFF]">
         <h2 className="text-3xl font-bold mb-4">{selectedTopic}</h2>
         {showResults && !viewAllQuestions ? (
           <div>
