@@ -61,6 +61,18 @@ const paperData = {
           },
         ],
       },
+      Semester5: {
+        2024: [
+          {
+            name: "Physics - Classical Mechanics and Quantum Mechanics (2024)",
+            link: "/Bsc/GUG/V sem/B.Sc V Sem NEP Physics - Classical Mechanics and Quantum Mechanics 2024.pdf",
+          },
+          {
+            name: "Physics - Elements of Atomic molecular and laser physics (2024)",
+            link: "/Bsc/GUG/V sem/B.Sc V Sem NEP Physics - Elements of Atomic molecular and laser physics 2024.pdf",
+          },
+        ],
+      },
     },
     BA: {
       Semester4: {
@@ -68,7 +80,7 @@ const paperData = {
           {
             name: "English - Basic English (2024)",
             link: "/BA/GUG/IV sem/B.A IV Sem English 2024.pdf",
-          }, 
+          },
           {
             name: "Urdu - Nazm-O-Nasar IV (2024)",
             link: "/BA/GUG/IV sem/B.A IV Sem Urdu - Nazm-O-Nasar IV 2024.pdf",
@@ -93,8 +105,8 @@ const paperData = {
             name: "Financial Education and Investment Awareness (2024)",
             link: "/BA/GUG/IV sem/B.A IV Sem Financial Education and Investment Awareness 2024.pdf",
           },
-        ]
-      }
+        ],
+      },
     },
     BCom: {
       Semester6: {

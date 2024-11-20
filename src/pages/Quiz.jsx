@@ -109,7 +109,7 @@ const Quiz = () => {
       </div>
 
       {/* Main content */}
-      <div className="w-auto lg:w-3/4 p-8 bg-[#F1EAFF]">
+      <div className="w-auto lg:w-3/4 p-8 bg-[#F0F0F0]">
         <h2 className="text-3xl font-bold mb-4">{selectedTopic}</h2>
         {showResults && !viewAllQuestions ? (
           <div>
