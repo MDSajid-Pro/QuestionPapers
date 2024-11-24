@@ -107,6 +107,66 @@ const paperData = {
           },
         ],
       },
+      Semester5: {
+        2024: [
+          {
+            name: "History - Contemporary History of India (2024)",
+            link: "/BA/GUG/V sem/B.A V sem History - Contemporary History of India 2024.pdf",
+          },
+          {
+            name: "History - History of Europe 1889 to 1945 A.D (2024)",
+            link: "/BA/GUG/V sem/B.A V sem History - History of Europe 1889 to 1945 A.D 2024.pdf",
+          },
+          {
+            name: "History - History of western Civilization (2024)",
+            link: "/BA/GUG/V sem/B.A V sem History - History of western Civilization 2024.pdf",
+          },
+          {
+            name: "Political Science - Basic Concept in International Relations (2024)",
+            link: "/BA/GUG/V sem/B.A V sem Political Science - Basic Concept in International Relations 2024.pdf",
+          },
+          {
+            name: "Political Science - Comparative Government and Politics (2024)",
+            link: "/BA/GUG/V sem/B.A V sem Political Science - Comparative Government and Politics 2024.pdf",
+          },
+          {
+            name: "Political Science - Karnataka Government and politics (2024)",
+            link: "/BA/GUG/V sem/B.A V sem Political Science - Karnataka Government and politics 2024.pdf",
+          },
+        ],
+      },
+      Semester6: {
+        2024: [
+          {
+            name: "History - History of Freedom Movement and Unification of Karnataka (2024)",
+            link: "/BA/GUG/VI sem/B.A VI Sem History - History of Freedom Movement and Unification of Karnataka 2024.pdf",
+          },
+          {
+            name: "History - History of India (1761 to 1857) (2024)",
+            link: "/BA/GUG/VI sem/B.A VI sem History - History of India (1761 to 1857) 2024.pdf",
+          },
+          {
+            name: "History - History of United States of America (2024)",
+            link: "/BA/GUG/VI sem/B.A VI sem History - History of United States of America 2024.pdf",
+          },
+          {
+            name: "Political Science - International Relations - Theoretical Aspects (2024)",
+            link: "/BA/GUG/VI sem/B.A VI sem Political Science - International Relations - Theoretical Aspects 2024.pdf",
+          },
+          {
+            name: "Political Science - Modern India Political Thinkers (2024)",
+            link: "/BA/GUG/VI sem/B.A VI sem Political Science - Modern India Political Thinkers 2024.pdf",
+          },
+          {
+            name: "Political Science - Political Economy of India (2024)",
+            link: "/BA/GUG/VI sem/B.A VI sem Political Science - Political Economy of India 2024.pdf",
+          },
+          {
+            name: "Computer Science - Cyber Security (2024)",
+            link: "/BA/GUG/VI sem/B.A VI sem Computer Science - Cyber Security 2024.pdf",
+          },
+        ],
+      },
     },
     BCom: {
       Semester6: {

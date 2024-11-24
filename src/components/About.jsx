@@ -22,8 +22,8 @@ const About = () => {
           </p>
           <p className="mb-5">
             <span className="font-semibold">2. Wide Coverage:</span> We cater to
-            a variety of universities and courses, including <b>B.Sc, B.A,
-            B.Com, BE.d</b>, and more. Simply select your university, course,
+            a variety of universities and courses, including <span className="font-semibold">B.Sc, B.A,
+            B.Com, B.Ed</span>, and more. Simply select your university, course,
             semester, and year to download question papers effortlessly.
           </p>
           <p>
