@@ -8,8 +8,10 @@ const Quiz = () => {
   const [showResults, setShowResults] = useState(false);
   const [viewAllQuestions, setViewAllQuestions] = useState(false);
   const [startTime] = useState(Date.now());
+  const [error, setError] = useState("");
 
   const handleAnswer = (option) => {
+    setError("");
     setAnswers((prevAnswers) => {
       const newAnswers = [...prevAnswers];
       newAnswers[currentQuestion] = option;
@@ -18,18 +20,33 @@ const Quiz = () => {
   };
 
   const handleSubmit = () => {
+    if (answers.length < topics[selectedTopic].questions.length) {
+      setError("Please answer all the questions before submitting.");
+      return;
+    }
+
+    if (answers.includes(undefined)) {
+      setError("Some questions are still unanswered.");
+      return;
+    }
+
     setShowResults(true);
   };
 
   const handleNext = () => {
+    if (!answers[currentQuestion]) {
+      setError("Please answer this question before moving to the next.");
+      return;
+    }
     if (currentQuestion < topics[selectedTopic].questions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
+      setError("");
     }
   };
-
   const handlePrevious = () => {
     if (currentQuestion > 0) {
       setCurrentQuestion(currentQuestion - 1);
+      setError("");
     }
   };
 
@@ -39,6 +56,7 @@ const Quiz = () => {
     setAnswers([]);
     setShowResults(false);
     setViewAllQuestions(false);
+    setError("");
   };
 
   const handleViewQuestions = () => {
@@ -56,7 +74,7 @@ const Quiz = () => {
       ? answers.reduce((score, answer, index) => {
           if (answer === topics[selectedTopic].questions[index].answer) {
             const questionMarks =
-              topics[selectedTopic].questions[index].marks || 0; // Default to 0 if marks is undefined
+              topics[selectedTopic].questions[index].marks || 0;
             return score + questionMarks;
           }
           return score;
@@ -78,13 +96,13 @@ const Quiz = () => {
   return (
     <div className="flex flex-col lg:flex-row h-[95vh]">
       {/* Sidebar */}
-      <div className="w-full lg:w-1/4 bg-[#10439F] text-white p-4 ">
-        <h2 className="text-2xl font-bold mb-4">SUBJECTS</h2>
+      <div className="w-full lg:w-1/4 bg-[#E5CA5A] text-white p-4 ">
+        <h2 className="text-2xl font-bold mb-4 text-black">SUBJECTS</h2>
         <select
           onChange={handleTopicChange}
           className="p-2 border border-gray-300 rounded-md w-full bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-purple-600 hover:cursor-pointer mb-4"
         >
-          <option disabled selected className="text-gray-500">
+          <option disabled selected className="text-black">
             Choose a Subject
           </option>
           {Object.keys(topics).map((topic, index) => (
@@ -97,7 +115,7 @@ const Quiz = () => {
             </option>
           ))}
         </select>
-        <ol className="italic m-4">
+        <ol className="italic m-4 text-black">
           <li>1. Please make sure you are answering all the questions.</li>
           <li>2. Each question carry 2 points.</li>
           <li>

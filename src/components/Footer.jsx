@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className="flex flex-wrap justify-between items-center">
           {/* Logo and Brand Info */}
-          <div className="mb-4 md:mb-0">
+          <div className="text-center mb-4 md:mb-0">
             <h2 className="text-xl font-bold">Question Papers</h2>
             <p className="text-sm">Simplifying your academic journey.</p>
           </div>
@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
 
           {/* Social Media Links */}
-          <div>
+          <div className="">
             <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
             <div className="flex space-x-4">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">

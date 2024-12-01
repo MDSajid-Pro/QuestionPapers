@@ -3,7 +3,7 @@ import testimonialsData from "../data/testimonialsData";
 
 const Testimonials = () => {
   return (
-    <div className="py-12 bg-gray-100 rounded-lg">
+    <div className="py-12 bg-[#F0F0F0] rounded-lg">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center text-gray-800 mb-10">
           What Our Students Say

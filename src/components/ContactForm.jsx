@@ -95,10 +95,17 @@ export const ContactForm = () => {
         {/* Right Section */}
         <div className="md:w-1/2 p-8">
           <h2 className="text-2xl font-bold mb-6 text-gray-800">Contact</h2>
-          <form ref={form} onSubmit={sendEmail} noValidate className="space-y-4">
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            noValidate
+            className="space-y-4"
+          >
             {/* Name */}
             <div>
-            <label className="block mb-1 text-sm text-red-700">* Required</label>
+              <label className="block mb-1 text-sm text-red-700">
+                * Required
+              </label>
               <input
                 type="text"
                 name="user_name"

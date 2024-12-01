@@ -4,11 +4,13 @@ import SelectionForm from "./SelectionForm";
 import Footer from "./Footer";
 import Testimonials from "./Testimonials";
 import ContactForm from "./ContactForm";
+import Marquee from './Marquee';
 
 const Home = () => {
   return (
     <div className="App">
       <div className="container mx-auto p-5">
+        <Marquee/>
         <SelectionForm />
         <div id="about">
           <About />

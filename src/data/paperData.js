@@ -20,6 +20,10 @@ const paperData = {
             link: "/Bsc/GUG/III sem/B.Sc 3rd Sem NEP Zoology - Molecular biology Bio instrumentation and techniques in biology 2024.pdf",
           },
           {
+            name: "Maths - Ordinary Differential Equation and Real Analysis -I (2024)",
+            link: "/Bsc/GUG/III sem/Bsc III sem Maths - Ordinary Differential Equation and Real Analysis -I 2024.pdf",
+          },
+          {
             name: "Physics - Wave Motion and Optics (2024)",
             link: "/Bsc/GUG/III sem/Bsc. III Sem Physics - Wave Motion and Optics 2023.pdf",
           },

@@ -6,9 +6,17 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        'poppins': ['Poppins', 'sans-serif'],
-      }
+      animation: {
+        scroll: 'scroll 20s linear infinite',
+        'scroll-sm': 'scroll 100s linear infinite',
+        'scroll-lg': 'scroll 80s linear infinite',
+      },
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      },
     },
   },
   plugins: [],

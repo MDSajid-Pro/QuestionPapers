@@ -37,7 +37,7 @@ const SelectionForm = () => {
           className="border p-2 rounded-xl mb-4 w-full"
           value={course}
         >
-          <option>---Select Course------</option>
+          <option>---Select Course---</option>
           <option value="BSc">B.Sc</option>
           <option value="BA">B.A</option>
           <option value="BCom">B.Com</option>
