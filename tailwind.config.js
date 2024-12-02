@@ -8,8 +8,8 @@ export default {
     extend: {
       animation: {
         scroll: 'scroll 20s linear infinite',
-        'scroll-sm': 'scroll 100s linear infinite',
-        'scroll-lg': 'scroll 80s linear infinite',
+        'scroll-sm': 'scroll 20s linear infinite',
+        'scroll-lg': 'scroll 50s linear infinite',
       },
       keyframes: {
         scroll: {

@@ -10,13 +10,13 @@ const Footer = () => {
           {/* Logo and Brand Info */}
           <div className="text-center mb-4 md:mb-0">
             <h2 className="text-xl font-bold">Question Papers</h2>
-            <p className="text-sm">Simplifying your academic journey.</p>
+            <p className="text-sm"></p>
           </div>
 
           {/* Quick Links */}
-          <div className="mb-4 md:mb-1">
-            <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
-            <ul className="space-y-2 text-sm">
+          <div className=" mb-4 md:mb-1">
+            <h3 className="text-lg font-semibold mb-2 underline">Quick Links</h3>
+            <ul className=" text-sm flex gap-2">
               <li>
                 <Link to="/" className="hover:underline">
                   Home
@@ -42,7 +42,7 @@ const Footer = () => {
 
           {/* Social Media Links */}
           <div className="">
-            <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
+            <h3 className="text-lg font-semibold mb-2 underline">Follow Us</h3>
             <div className="flex space-x-4">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
             
