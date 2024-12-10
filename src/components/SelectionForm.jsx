@@ -25,6 +25,7 @@ const SelectionForm = () => {
           onChange={(e) => setUniversity(e.target.value)}
           className="border p-2 rounded-xl mb-4 w-full"
           value={university}
+          aria-label="Select University"
         >
           <option>---Select University---</option>
           <option value="gulbargaUniversity">Gulbarga University</option>
@@ -36,6 +37,7 @@ const SelectionForm = () => {
           onChange={(e) => setCourse(e.target.value)}
           className="border p-2 rounded-xl mb-4 w-full"
           value={course}
+          aria-label="Select Course"
         >
           <option>---Select Course---</option>
           <option value="BSc">B.Sc</option>
@@ -49,6 +51,7 @@ const SelectionForm = () => {
           onChange={(e) => setSemester(e.target.value)}
           className="border p-2 rounded-xl mb-4 w-full"
           value={semester}
+          aria-label="Select Semester"
         >
           <option>---Select Semester---</option>
           <option value="Semester1">I Semester</option>
@@ -64,6 +67,7 @@ const SelectionForm = () => {
           onChange={(e) => setYear(e.target.value)}
           className="border p-2 rounded-xl mb-4 w-full"
           value={year}
+          aria-label="Select Year"
         >
           <option value="">---Select Year---</option>
           <option value="2024">2024</option>
