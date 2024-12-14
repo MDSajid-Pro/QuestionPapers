@@ -403,11 +403,19 @@ const paperData = {
           },
           {
             name: "Understanding Discipline and Pedagogy of Mathematics (2024)",
-            link: "public/BEd/I sem/B..Ed I Sem Understanding Discipline & Pedagogy Of Mathematics 2024.pdf",
+            link: "/BEd/I sem/B..Ed I Sem Understanding Discipline & Pedagogy Of Mathematics 2024.pdf",
           },
           {
             name: "Understanding Discipline and Pedagogy of Physical Science (2024)",
             link: "/BEd/I sem/B.Ed I Sem Understanding Discipline & Pedagogy Physical Science 2024.pdf",
+          },
+          {
+            name: "Understanding Discipline and Pedagogy of Social Science (2024)",
+            link: "/BEd/I sem/B.Ed I Sem Understanding Discipline and Pedagogy of Social Science 2024.pdf",
+          },
+          {
+            name: "Urdu - UDP URDU (2024)",
+            link: "/BEd/I sem/B.Ed I Sem Urdu 2024.pdf",
           },
         ],
       },
