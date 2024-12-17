@@ -7,6 +7,13 @@ const SelectionForm = () => {
   const [semester, setSemester] = useState("");
   const [year, setYear] = useState("");
 
+  // Utility function to format semester names
+  const formatSemesterName = (key) => {
+    const semesterNumber = key.replace("Semester", ""); // Extract number
+    const romanNumerals = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII"]; // Extend for all semesters
+    return `${romanNumerals[semesterNumber - 1]} Semester`;
+  };
+
   // Get the downloadable question papers based on user selection
   const getPaperLinks = () => {
     if (university && course && semester && year) {
@@ -53,13 +60,12 @@ const SelectionForm = () => {
           value={semester}
           aria-label="Select Semester"
         >
-          <option>---Select Semester---</option>
-          <option value="Semester1">I Semester</option>
-          <option value="Semester2">II Semester</option>
-          <option value="Semester3">III Semester</option>
-          <option value="Semester4">IV Semester</option>
-          <option value="Semester5">V Semester</option>
-          <option value="Semester6">VI Semester</option>
+          <option value="">---Select Semester---</option>
+          {Object.keys(paperData[university]?.[course] || {}).map((semKey) => (
+            <option key={semKey} value={semKey}>
+              {formatSemesterName(semKey)}
+            </option>
+          ))}
         </select>
 
         {/* Year selection */}
@@ -70,7 +76,13 @@ const SelectionForm = () => {
           aria-label="Select Year"
         >
           <option value="">---Select Year---</option>
-          <option value="2024">2024</option>
+          {Object.keys(paperData[university]?.[course]?.[semester] || {}).map(
+            (yearKey) => (
+              <option key={yearKey} value={yearKey}>
+                {yearKey}
+              </option>
+            )
+          )}
         </select>
       </div>
 

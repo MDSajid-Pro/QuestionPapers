@@ -205,42 +205,6 @@ const paperData = {
   },
   bidarUniversity: {
     BSc: {
-      Semester2: {
-        2024: [
-          {
-            name: "BOTANY - Diversity of Non Flowering Plants (2024)",
-            link: "/Bsc/BUB/II Sem/B.Sc II sem BOTANY - Diversity of Non Flowering Plants 2024.pdf",
-          },
-          {
-            name: "ZOOLOGY - Biochemistry & Physiological (2024)",
-            link: "/Bsc/BUB/II Sem/B Sc II sem NEP ZOOLOGY - Biochemistry & Physiological 2024.pdf",
-          },
-          {
-            name: "URDU - Sher-o-Adab-II (2024)",
-            link: "/Bsc/BUB/II Sem/B.Sc II sem NEP URDU - Sher-o-Adab-II 2024.pdf",
-          },
-          {
-            name: "ENGLISH - Basic English (2024)",
-            link: "/Bsc/BUB/II Sem/B.Sc II sem NEP ENGLISH - Basic English 2024.pdf",
-          },
-          {
-            name: "MATHEMATICS - Algebra - II And Calculus - II (2024)",
-            link: "/Bsc/BUB/II Sem/B Sc II sem NEP MATHEMATICS - Algebra - II And Calculus - II 2024.pdf",
-          },
-          {
-            name: "PHYSICS - Electricity and Magnetism (2024)",
-            link: "/Bsc/BUB/II Sem/B.Sc II sem NEP PHYSICS - Electricity and Magnetism 2024.pdf",
-          },
-          {
-            name: "COMPUTER SCIENCE - Digital Fluency (2024)",
-            link: "/Bsc/BUB/II Sem/B.Sc II sem NEP COMPUTER SCIENCE - Digital Fluency 2024.pdf",
-          },
-          {
-            name: "ENGLISH OE - Functional English Grammar & Study Skills (2024)",
-            link: "/Bsc/BUB/II Sem/B.Sc II sem NEP ENGLISH OE - Functional English Grammar & Study Skills 2024.pdf",
-          },
-        ],
-      },
       Semester1: {
         2024: [
           {
@@ -285,40 +249,44 @@ const paperData = {
           },
         ],
       },
-    },
-    BA: {
       Semester2: {
         2024: [
           {
-            name: "English - Literary Vista (2024)",
-            link: "/BA/BUB/II sem/B.A II sem English - Literary Vista 2024.pdf",
+            name: "BOTANY - Diversity of Non Flowering Plants (2024)",
+            link: "/Bsc/BUB/II Sem/B.Sc II sem BOTANY - Diversity of Non Flowering Plants 2024.pdf",
           },
           {
-            name: "Basic Urdu - Nazam-o-Nasar-II (2024)",
-            link: "/BA/BUB/II sem/B.A II sem Basic Urdu - Nazam-o-Nasar-II 2024.pdf",
+            name: "ZOOLOGY - Biochemistry & Physiological (2024)",
+            link: "/Bsc/BUB/II Sem/B Sc II sem NEP ZOOLOGY - Biochemistry & Physiological 2024.pdf",
           },
           {
-            name: "English OE - Functional English Grammar and Study Skills (2024)",
-            link: "/BA/BUB/II sem/B.A II sem English OE - Functional English Grammar and Study Skills 2024.pdf",
+            name: "URDU - Sher-o-Adab-II (2024)",
+            link: "/Bsc/BUB/II Sem/B.Sc II sem NEP URDU - Sher-o-Adab-II 2024.pdf",
           },
           {
-            name: "History - Cultural Heritage of Karnataka (2024)",
-            link: "/BA/BUB/II sem/B.A II sem History - Cultural Heritage of Karnataka 2024.pdf",
+            name: "ENGLISH - Basic English (2024)",
+            link: "/Bsc/BUB/II Sem/B.Sc II sem NEP ENGLISH - Basic English 2024.pdf",
           },
           {
-            name: "History - Political History of Karnataka (From 1100 CE to 1750CE) (2024)",
-            link: "/BA/BUB/II sem/B.A II sem History - Political History of Karnataka (From 1100 CE to 1750CE) 2024.pdf",
+            name: "MATHEMATICS - Algebra - II And Calculus - II (2024)",
+            link: "/Bsc/BUB/II Sem/B Sc II sem NEP MATHEMATICS - Algebra - II And Calculus - II 2024.pdf",
           },
           {
-            name: "Political Science - Indian National Movement and Constitutional Development (2024)",
-            link: "/BA/BUB/II sem/B.A II sem Political Science - Indian National Movement and Constitutional Development 2024.pdf",
+            name: "PHYSICS - Electricity and Magnetism (2024)",
+            link: "/Bsc/BUB/II Sem/B.Sc II sem NEP PHYSICS - Electricity and Magnetism 2024.pdf",
           },
           {
-            name: "Environmental Studies (2024)",
-            link: "/BA/BUB/II sem/B.A II sem Environmental Studies 2024.pdf",
+            name: "COMPUTER SCIENCE - Digital Fluency (2024)",
+            link: "/Bsc/BUB/II Sem/B.Sc II sem NEP COMPUTER SCIENCE - Digital Fluency 2024.pdf",
+          },
+          {
+            name: "ENGLISH OE - Functional English Grammar & Study Skills (2024)",
+            link: "/Bsc/BUB/II Sem/B.Sc II sem NEP ENGLISH OE - Functional English Grammar & Study Skills 2024.pdf",
           },
         ],
       },
+    },
+    BA: {
       Semester1: {
         2024: [
           {
@@ -360,6 +328,38 @@ const paperData = {
           {
             name: "Computer science - Digital Fluency (2024)",
             link: "/BA/BUB/I sem/B.A I sem NEP Computer science - Digital Fluency 2024.pdf",
+          },
+        ],
+      },
+      Semester2: {
+        2024: [
+          {
+            name: "English - Literary Vista (2024)",
+            link: "/BA/BUB/II sem/B.A II sem English - Literary Vista 2024.pdf",
+          },
+          {
+            name: "Basic Urdu - Nazam-o-Nasar-II (2024)",
+            link: "/BA/BUB/II sem/B.A II sem Basic Urdu - Nazam-o-Nasar-II 2024.pdf",
+          },
+          {
+            name: "English OE - Functional English Grammar and Study Skills (2024)",
+            link: "/BA/BUB/II sem/B.A II sem English OE - Functional English Grammar and Study Skills 2024.pdf",
+          },
+          {
+            name: "History - Cultural Heritage of Karnataka (2024)",
+            link: "/BA/BUB/II sem/B.A II sem History - Cultural Heritage of Karnataka 2024.pdf",
+          },
+          {
+            name: "History - Political History of Karnataka (From 1100 CE to 1750CE) (2024)",
+            link: "/BA/BUB/II sem/B.A II sem History - Political History of Karnataka (From 1100 CE to 1750CE) 2024.pdf",
+          },
+          {
+            name: "Political Science - Indian National Movement and Constitutional Development (2024)",
+            link: "/BA/BUB/II sem/B.A II sem Political Science - Indian National Movement and Constitutional Development 2024.pdf",
+          },
+          {
+            name: "Environmental Studies (2024)",
+            link: "/BA/BUB/II sem/B.A II sem Environmental Studies 2024.pdf",
           },
         ],
       },
